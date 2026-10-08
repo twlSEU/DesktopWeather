@@ -1,0 +1,6 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name":"调试桌面天气","type":"coreclr","request":"launch","preLaunchTask":"构建 (Debug)","program":"${workspaceFolder}/bin/Debug/net10.0-windows/DesktopWeather.dll","cwd":"${workspaceFolder}","console":"internalConsole","env":{"DOTNET_ROOT":"${workspaceFolder}\\.tools\\dotnet"}}
+  ]
+}

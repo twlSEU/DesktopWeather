@@ -1,0 +1,16 @@
+bin/
+obj/
+.tools/
+release/
+benchmark-results/
+settings.json
+settings.json.tmp
+error.log
+.vscode/settings.json
+.env
+.env.*
+*.user
+*.suo
+*.pfx
+*.p12
+*.key

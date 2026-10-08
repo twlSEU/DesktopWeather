@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label":"构建 (Debug)","type":"process","command":"powershell.exe","args":["-NoProfile","-ExecutionPolicy","Bypass","-File","${workspaceFolder}\\Build.ps1"],"group":{"kind":"build","isDefault":true},"problemMatcher":"$msCompile"},
+    {"label":"运行桌面天气","type":"process","command":"powershell.exe","args":["-NoProfile","-ExecutionPolicy","Bypass","-File","${workspaceFolder}\\Run.ps1"],"problemMatcher":[]},
+    {"label":"发布独立 EXE","type":"process","command":"powershell.exe","args":["-NoProfile","-ExecutionPolicy","Bypass","-File","${workspaceFolder}\\Build.ps1","-Publish"],"problemMatcher":"$msCompile"},
+    {"label":"验证软件","type":"process","command":"powershell.exe","args":["-NoProfile","-ExecutionPolicy","Bypass","-File","${workspaceFolder}\\Build.ps1","-Test"],"problemMatcher":"$msCompile"}
+  ]
+}
